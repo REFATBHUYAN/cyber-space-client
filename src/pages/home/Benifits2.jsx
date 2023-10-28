@@ -48,7 +48,7 @@ const features = [
 
 const Benifits2 = () => {
   return (
-    <div className="pt-20 pb-20 bg-slate-50 dark:bg-gray-900">
+    <div className="pt-20 pb-20 bg-slate-50 dark:bg-slate-800">
       <Container>
         <h1 className="text-center ">
           <span className="font-bold text-3xl  text-slate-700 dark:text-slate-100">
@@ -90,7 +90,7 @@ const Benifits2 = () => {
       </Container>
       <Container>
         <div
-          className="hero min-h-[300px] rounded-md bg-slate-100 dark:bg-gray-800 mt-20"
+          className="hero min-h-[300px] rounded-md bg-slate-100 dark:bg-slate-900 mt-20"
           style={{
             backgroundImage: "url(https://i.ibb.co/HYxjFfs/hero-bg.png)",
           }}

@@ -10,9 +10,9 @@ const RecentComments = () => {
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-message-dots dark:text-slate-50"
-            width="24"
-            height="24"
+            class="icon icon-tabler icon-tabler-message-dots text-slate-700 dark:text-slate-50"
+            width="28"
+            height="28"
             viewBox="0 0 24 24"
             stroke-width="2"
             stroke="currentColor"
@@ -34,7 +34,7 @@ const RecentComments = () => {
             <div>
               <div className="flex gap-3 mb-2">
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Tanz</h1>
-                <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
+                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
                 02 Oct 2023
                 </button>
               </div>
@@ -46,7 +46,7 @@ const RecentComments = () => {
             <div>
               <div className="flex gap-3 mb-2">
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Afroza</h1>
-                <button className="bg-orange-50 text-orange-700 uppercase rounded-md px-1 text-xs text-center border border-orange-100">
+                <button className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">
                 02 Oct 2023
                 </button>
               </div>
@@ -58,7 +58,7 @@ const RecentComments = () => {
             <div>
               <div className="flex gap-3 mb-2">
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Rokon</h1>
-                <button className="bg-red-50 text-red-700 uppercase rounded-md px-1 text-xs text-center border border-red-100">
+                <button className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
                 02 Oct 2023
                 </button>
               </div>
@@ -70,7 +70,7 @@ const RecentComments = () => {
             <div>
               <div className="flex gap-3 mb-2">
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Lava</h1>
-                <button className="bg-indigo-50 text-indigo-700 uppercase rounded-md px-1 text-xs text-center border border-indigo-100">
+                <button className="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
                 02 Oct 2023
                 </button>
               </div>
@@ -82,7 +82,7 @@ const RecentComments = () => {
             <div>
               <div className="flex gap-3 mb-2">
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Tontu</h1>
-                <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
+                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
                 02 Oct 2023
                 </button>
               </div>
@@ -94,7 +94,7 @@ const RecentComments = () => {
             <div>
               <div className="flex gap-3 mb-2">
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Xuel</h1>
-                <button className="bg-blue-50 text-blue-700 uppercase rounded-md px-1 text-xs text-center border border-blue-100">
+                <button className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
                 02 Oct 2023
                 </button>
               </div>

@@ -43,9 +43,31 @@ const Search3 = () => {
   return (
     <>
       {/* The button to open modal */}
-      <label htmlFor="my_modal_7" className="btn-neutral cursor-pointer mx-auto bg-none border-none">
+      <label
+        htmlFor="my_modal_7"
+        className="btn-neutral cursor-pointer mx-auto bg-none border-none"
+      >
         <span>
-        <img className="h-12 w-60 md:w-[670px] mx-auto" src="/public/search.png" alt="" />
+          {/* <img className="h-12 w-80 md:w-[670px] mx-auto" src="/search.png" alt="" /> */}
+          <div className="flex items-center justify-start gap-4 rounded-md w-[360px] md:w-[670px]  mx-auto text-center border border-slate-300 dark:border-slate-700 py-2 px-4 text-slate-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-search"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+              <path d="M21 21l-6 -6"></path>
+            </svg>
+            Search for your desired software
+          </div>
         </span>
       </label>
       {/* <label htmlFor="my_modal_7" className="btn">open modal</label> */}
@@ -53,8 +75,8 @@ const Search3 = () => {
       {/* Put this part before </body> tag */}
       <input type="checkbox" id="my_modal_7" className="modal-toggle" />
       <div className="modal">
-        <div className="modal-box h-96 dark:bg-gray-900">
-          <div className="w-80 md:w-full max-w-[670px] h-12 mx-auto relative">
+        <div className="modal-box bg-slate-50 h-96 dark:bg-gray-900 scroll-py-2 overflow-y-auto">
+          <div className="w-80 md:w-full max-w-[670px] h-12 mx-auto relative ">
             <label
               for="default-search"
               className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"

@@ -86,16 +86,16 @@ const posts = [
 
 const LatestUpdate2 = () => {
   return (
-    <div className=" py-10">
-      <div className="mx-auto max-w-7xl">
+    <div className="py-10">
+      <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <h1 className="flex items-center gap-2">
             {/* <BiRadioCircleMarked className="w-7 h-7 animate-ping delay-700"></BiRadioCircleMarked> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-circle-dot animate-ping delay-700"
-              width="24"
-              height="24"
+              class="icon icon-tabler icon-tabler-circle-dot text-slate-700 dark:text-slate-50"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
@@ -118,11 +118,11 @@ const LatestUpdate2 = () => {
                 key={post.id}
                 className="relative isolate flex flex-col gap-8 lg:flex-row"
               >
-                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-56 lg:shrink-0">
+                <div className="relative aspect-square w-1/2 lg:w-56 lg:shrink-0">
                   <img
                     src={post.imageUrl}
                     alt=""
-                    className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+                    className="absolute inset-0 h-full aspect-square w-full rounded-md bg-gray-50 object-cover"
                   />
                   <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
                 </div>

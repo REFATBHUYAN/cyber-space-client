@@ -3,15 +3,15 @@ import Container from "../../components/Container";
 
 const EssentialSoft = () => {
   return (
-    <div className="max-w-7xl mx-auto py-10 text-slate-700">
+    <div className="max-w-7xl mx-auto py-16 text-slate-700">
       <Container>
         <h1 className="flex items-center gap-2 mb-8">
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star dark:text-slate-50"
-            width="24"
-            height="24"
+            class="icon icon-tabler icon-tabler-star text-slate-700 dark:text-slate-50"
+            width="28"
+            height="28"
             viewBox="0 0 24 24"
             stroke-width="2"
             stroke="currentColor"
@@ -34,7 +34,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Internet Download Manager
                 </h1>
-                <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
+                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
                   WEB
                 </button>
               </div>
@@ -45,7 +45,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Microsoft Office 2021
                 </h1>
-                <button className="bg-blue-50 text-blue-700 uppercase rounded-md px-1 text-xs text-center border border-blue-100">
+                <button className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
                   WINDOWS
                 </button>
               </div>
@@ -56,7 +56,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Pot Player
                 </h1>
-                <button className="bg-orange-50 text-orange-700 uppercase rounded-md px-1 text-xs text-center border border-orange-100">
+                <button className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
                   MULTIMEDIA
                 </button>
               </div>
@@ -67,7 +67,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Wondershare Filmora
                 </h1>
-                <button className="bg-pink-50 text-pink-700 uppercase rounded-md px-1 text-xs text-center border border-pink-100">
+                <button className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">
                   UTILITY
                 </button>
               </div>
@@ -78,7 +78,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Windows 11 Pro
                 </h1>
-                <button className="bg-cyan-50 text-cyan-700 uppercase rounded-md px-1 text-xs text-center border border-cyan-100">
+                <button className="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
                   WINDOWS
                 </button>
               </div>
@@ -89,7 +89,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Internet Download Manager
                 </h1>
-                <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
+                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
                   WEB
                 </button>
               </div>
@@ -102,7 +102,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Internet Download Manager
                 </h1>
-                <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
+                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
                   WEB
                 </button>
               </div>
@@ -113,7 +113,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Microsoft Office 2021
                 </h1>
-                <button className="bg-blue-50 text-blue-700 uppercase rounded-md px-1 text-xs text-center border border-blue-100">
+                <button className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
                   WINDOWS
                 </button>
               </div>
@@ -124,7 +124,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Pot Player
                 </h1>
-                <button className="bg-orange-50 text-orange-700 uppercase rounded-md px-1 text-xs text-center border border-orange-100">
+                <button className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
                   MULTIMEDIA
                 </button>
               </div>
@@ -135,7 +135,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Wondershare Filmora
                 </h1>
-                <button className="bg-pink-50 text-pink-700 uppercase rounded-md px-1 text-xs text-center border border-pink-100">
+                <button className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">
                   UTILITY
                 </button>
               </div>
@@ -146,7 +146,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Windows 11 Pro
                 </h1>
-                <button className="bg-cyan-50 text-cyan-700 uppercase rounded-md px-1 text-xs text-center border border-cyan-100">
+                <button className="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
                   WINDOWS
                 </button>
               </div>
@@ -157,7 +157,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Internet Download Manager
                 </h1>
-                <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
+                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
                   WEB
                 </button>
               </div>
@@ -170,7 +170,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Internet Download Manager
                 </h1>
-                <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
+                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
                   WEB
                 </button>
               </div>
@@ -181,7 +181,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Microsoft Office 2021
                 </h1>
-                <button className="bg-blue-50 text-blue-700 uppercase rounded-md px-1 text-xs text-center border border-blue-100">
+                <button className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
                   WINDOWS
                 </button>
               </div>
@@ -192,7 +192,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Pot Player
                 </h1>
-                <button className="bg-orange-50 text-orange-700 uppercase rounded-md px-1 text-xs text-center border border-orange-100">
+                <button className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
                   MULTIMEDIA
                 </button>
               </div>
@@ -203,7 +203,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Wondershare Filmora
                 </h1>
-                <button className="bg-pink-50 text-pink-700 uppercase rounded-md px-1 text-xs text-center border border-pink-100">
+                <button className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">
                   UTILITY
                 </button>
               </div>
@@ -214,7 +214,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Windows 11 Pro
                 </h1>
-                <button className="bg-cyan-50 text-cyan-700 uppercase rounded-md px-1 text-xs text-center border border-cyan-100">
+                <button className="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
                   WINDOWS
                 </button>
               </div>
@@ -225,7 +225,7 @@ const EssentialSoft = () => {
                 <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700 mb-2">
                   Internet Download Manager
                 </h1>
-                <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
+                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
                   WEB
                 </button>
               </div>

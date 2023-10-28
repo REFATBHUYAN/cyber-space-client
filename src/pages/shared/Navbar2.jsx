@@ -1,11 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { Fragment } from "react";
 import { Menu, Popover, Transition } from "@headlessui/react";
-import {
-  MagnifyingGlassIcon,
-  
-} from "@heroicons/react/20/solid";
+import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import TopNote2 from "../../components/TopNote2";
 import { ThemeContext } from "../../components/ThemeProvider";
@@ -90,6 +87,30 @@ const Navbar2 = () => {
     }
     // setDarkMode(!darkMode);
   };
+
+  const [showBorder, setShowBorder] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowBorder(true);
+        console.log("yes scrolled");
+      } else {
+        setShowBorder(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const borderClasses = showBorder
+    ? "border-slate-200 dark:border-slate-800 shadow-md "
+    : "border-transparent";
+
   return (
     <>
       {/* When the mobile menu is open, add `overflow-hidden` to the `body` element to prevent double scrollbars */}
@@ -98,38 +119,40 @@ const Navbar2 = () => {
         as="header"
         className={({ open }) =>
           classNames(
-            open ? "fixed inset-0 z-40 overflow-y-auto" : "",
-            "bg-white dark:bg-gray-900 shadow-sm lg:static lg:overflow-y-visible "
+            open ? `fixed inset-0 z-40  overflow-y-auto` : "",
+            `bg-slate-50  dark:bg-slate-900   ${borderClasses} `
           )
         }
       >
         {({ open }) => (
           <>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
-              <div className="relative flex justify-between items-center lg:gap-8 xl:grid xl:grid-cols-12">
+            <div className="mx-auto max-w-7xl px-4 ">
+              <div className="relative h-16 flex justify-between items-center lg:gap-8 xl:grid xl:grid-cols-12">
                 <div className="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-3">
                   <div className="flex flex-shrink-0 items-center">
                     <a href="#" className="flex items-center gap-2 normal-case">
                       <img
-                        className="block h-8 w-auto"
+                        className="block h-10 w-10"
                         src="/favicon.ico"
                         alt="Your Company"
                       />
-                      <span className="text-indigo-600 hidden md:block font-bold text-3xl font-unica stroke-black stroke-1">
+                      <span className="text-indigo-600 hidden md:block text-4xl tracking-[-4px] font-unica">
                         CYBERSPACE
                       </span>
                     </a>
                   </div>
                 </div>
                 <div className="min-w-0 flex-1 md:px-8 lg:px-0 xl:col-span-6 block ">
-                  <div className="flex items-center px-6 py-4 md:hidden md:mx-auto md:max-w-3xl lg:mx-0 lg:max-w-none xl:px-0">
+                  <div className=" items-center px-6 py-4 hidden md:mx-auto md:max-w-3xl lg:mx-0 lg:max-w-none xl:px-0">
                     <div className="w-full">
                       <Search2></Search2>
                     </div>
                   </div>
                   <div>
-                    <p className=" text-center rounded-full px-6 my-4 hidden md:block md:mx-auto  lg:mx-0 lg:max-w-none xl:px-0 text-sm leading-6 text-slate-700 dark:text-slate-100 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                      Home of pre-activated software!
+                    <p>
+                      <span className="w-60 mx-auto h-8 py-1 text-center rounded-full block border-[1px] border-slate-200 dark:border-slate-700 text-sm px-0 text-slate-600 dark:text-slate-200">
+                        Home of pre-activated software!
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -146,10 +169,11 @@ const Navbar2 = () => {
                   </Popover.Button>
                 </div>
                 <div className="hidden lg:flex lg:items-center lg:justify-end xl:col-span-3">
-                  <button className="w-10 h-10 flex justify-center items-center rounded-md hover:text-slate-700">
+                  <button className="w-10 h-10 flex justify-center items-center hover:bg-slate-100  text-slate-400 rounded-full hover:text-slate-700 dark:hover:text-slate-400 dark:hover:bg-slate-700">
                     <label className="swap swap-rotate">
                       {/* this hidden checkbox controls the state */}
                       <input
+                        checked={darkMode}
                         onChange={toglleTheme}
                         type="checkbox"
                         className="hidden"
@@ -205,11 +229,11 @@ const Navbar2 = () => {
                     className="ml-3 relative flex-shrink-0 hover:text-slate-700"
                   >
                     <div>
-                      <Menu.Button className="flex rounded-full">
+                      <Menu.Button className="w-10 h-10 flex justify-center items-center hover:bg-slate-100 text-slate-400 rounded-full hover:text-slate-700 dark:hover:text-slate-400 dark:hover:bg-slate-700">
                         <span className="sr-only">Open user menu</span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="icon icon-tabler icon-tabler-bell w-6 h-6  "
+                          class="icon icon-tabler icon-tabler-bell w-6 h-6   "
                           width="24"
                           height="24"
                           viewBox="0 0 24 24"
@@ -305,12 +329,9 @@ const Navbar2 = () => {
                     </Transition>
                   </Menu>
                   {/* Profile dropdown */}
-                  <Menu
-                    as="div"
-                    className="ml-4 relative flex-shrink-0 hover:text-slate-700"
-                  >
+                  <Menu as="div" className="ml-4 relative flex-shrink-0 ">
                     <div>
-                      <Menu.Button className="flex rounded-full hover:text-slate-700 ">
+                      <Menu.Button className="h-10 w-10 flex justify-center items-center hover:bg-slate-100 text-slate-400 hover:text-slate-700 rounded-full dark:hover:text-slate-400 dark:hover:bg-slate-700">
                         <span className="sr-only">Open user menu</span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -376,14 +397,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100  text-gray-900 dark:text-gray-50 dark:bg-gray-800"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-smart-home mr-3 h-5 w-5 group-hover:text-gray-400 dark:text-gray-50"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -411,14 +432,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-gray-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-gray-50  group-hover:text-gray-400"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -448,14 +469,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-user-circle mr-3 h-5 w-5 dark:text-gray-50 group-hover:text-gray-500"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -484,14 +505,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-cloud-upload mr-3 h-5 w-5 dark:text-gray-50 group-hover:text-gray-500"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -520,14 +541,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-crown mr-3 h-5 w-5 dark:text-gray-50 group-hover:text-gray-500"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -554,14 +575,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-headset mr-3 h-5 w-5 dark:text-gray-50 group-hover:text-gray-500"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -593,14 +614,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-info-circle mr-3 h-5 w-5 dark:text-gray-50 group-hover:text-gray-500"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -629,14 +650,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-mail mr-3 h-5 w-5 dark:text-gray-50 group-hover:text-gray-500"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -664,14 +685,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-user-heart mr-3 h-5 w-5 dark:text-gray-50 group-hover:text-gray-500"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -700,14 +721,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-shopping-cart mr-3 h-5 w-5 dark:text-gray-50 group-hover:text-gray-500"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"
@@ -739,14 +760,14 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-50 dark:bg-gray-800 text-gray-900"
-                                    : "text-gray-700 dark:text-gray-50",
-                                  "group flex items-center px-4 py-2 text-sm"
+                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    : "text-slate-400 dark:text-slate-400 ",
+                                  "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-logout mr-3 h-5 w-5 dark:text-gray-50 group-hover:text-gray-500"
+                                  class="icon icon-tabler icon-tabler-wallet mr-3 h-5 w-5 dark:text-slate-400  group-hover:text-slate-700 dark:group-hover:text-slate-100"
                                   width="20"
                                   height="20"
                                   viewBox="0 0 24 24"

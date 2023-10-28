@@ -3,18 +3,18 @@ import Container from "../../components/Container";
 
 const Benifits = () => {
   return (
-    <div className="pt-20 pb-20 bg-slate-50 dark:bg-gray-900">
+    <div className="pt-20 pb-20 bg-slate-50 dark:bg-slate-800">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="flex flex-col justify-center items-center gap-3 text-slate-400 hover:text-indigo-700 ">
-            <div className="h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 hover:bg-indigo-700 hover:text-white">
+          <div className="group flex flex-col justify-center items-center gap-3 text-slate-400 ">
+            <div className=" h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 group-hover:bg-indigo-700 group-hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-shield-lock h-8 w-8   "
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
-                stroke-width="2"
+                stroke-width="1"
                 stroke="currentColor"
                 fill="none"
                 stroke-linecap="round"
@@ -26,23 +26,24 @@ const Benifits = () => {
                 <path d="M12 12l0 2.5"></path>
               </svg>
             </div>
-            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700 dark:text-slate-50 dark:hover:text-indigo-700">
+            <h1 className="font-semibold text-lg text-slate-700 group-hover:text-indigo-700 dark:text-slate-50 dark:hover:text-indigo-700">
               100% Secured
             </h1>
-            <p className="hover:text-slate-700 dark:hover:text-indigo-700">
+
+            <p className="text-center">
               Virus free downloads from our server so that you don’t get
               malwares.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-3 text-slate-400 hover:text-indigo-700 ">
-            <div className="h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 hover:bg-indigo-700 hover:text-white">
+          <div className="flex group flex-col justify-center items-center gap-3 text-slate-400  ">
+            <div className=" h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 group-hover:bg-indigo-700 group-hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-tabler"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
-                stroke-width="2"
+                stroke-width="1"
                 stroke="currentColor"
                 fill="none"
                 stroke-linecap="round"
@@ -54,23 +55,23 @@ const Benifits = () => {
                 <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
               </svg>
             </div>
-            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700 dark:text-slate-50 dark:hover:text-indigo-700">
+            <h1 className="font-semibold text-lg text-slate-700 group-hover:text-indigo-700 dark:text-slate-50 dark:group-hover:text-indigo-700">
               Easy Installation
             </h1>
-            <p className="hover:text-slate-700 dark:hover:text-indigo-700">
+            <p className="text-center">
               You just have to click once and the software will auto install
               itself.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-3 text-slate-400 hover:text-indigo-700 ">
-            <div className="h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 hover:bg-indigo-700 hover:text-white">
+          <div className="flex group flex-col justify-center items-center gap-3 text-slate-400 ">
+            <div className=" h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 group-hover:bg-indigo-700 group-hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-settings-automation"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
-                stroke-width="2"
+                stroke-width="1"
                 stroke="currentColor"
                 fill="none"
                 stroke-linecap="round"
@@ -81,22 +82,22 @@ const Benifits = () => {
                 <path d="M10 9v6l5 -3z"></path>
               </svg>
             </div>
-            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700 dark:text-slate-50 dark:hover:text-indigo-700">
+            <h1 className="font-semibold text-lg text-slate-700 group-hover:text-indigo-700 dark:text-slate-50 dark:group-hover:text-indigo-700">
               Auto Activation
             </h1>
-            <p className="hover:text-slate-700 dark:hover:text-indigo-700">
+            <p className="text-center">
               The software will be auto activated during the installation.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-3 text-slate-400 hover:text-indigo-700 ">
-            <div className="h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 hover:bg-indigo-700 hover:text-white">
+          <div className="flex group flex-col justify-center items-center gap-3 text-slate-400 ">
+            <div className=" h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 group-hover:bg-indigo-700 group-hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-headset"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
-                stroke-width="2"
+                stroke-width="1"
                 stroke="currentColor"
                 fill="none"
                 stroke-linecap="round"
@@ -109,10 +110,10 @@ const Benifits = () => {
                 <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
               </svg>
             </div>
-            <h1 className="font-semibold text-lg text-slate-700 dark:text-slate-50 dark:hover:text-indigo-700">
+            <h1 className="font-semibold text-lg text-slate-700 group-hover:text-indigo-600 dark:text-slate-50 dark:group-hover:text-indigo-700">
               Admin Support
             </h1>
-            <p className="hover:text-slate-700 dark:hover:text-indigo-700">
+            <p className="text-center">
               24/7 Admin support exclusively for our Pro users only.
             </p>
           </div>
@@ -120,7 +121,7 @@ const Benifits = () => {
       </Container>
       <Container>
         <div
-          className="hero min-h-[300px] rounded-md bg-slate-100 dark:bg-gray-800 mt-20"
+          className="hero min-h-[300px] rounded-md bg-slate-100 dark:bg-slate-900 mt-20"
           style={{
             backgroundImage: "url(https://i.ibb.co/HYxjFfs/hero-bg.png)",
           }}
@@ -135,7 +136,7 @@ const Benifits = () => {
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
               </p>
-              <button className="btn btn-primary bg-indigo-700 capitalize">
+              <button className="btn btn-primary bg-indigo-700 hover:bg-indigo-800 capitalize">
                 Get Started Now{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

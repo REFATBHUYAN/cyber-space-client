@@ -44,22 +44,23 @@ const Search2 = () => {
     <>
       {/* The button to open modal */}
       <button
-        className="btn-neutral cursor-pointer mx-auto bg-none border-none"
+        className="p-2 text-start w-full cursor-pointer mx-auto bg-none border border-slate-300 rounded-md"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
-        <span>
-          <img
+        <span className="   px-6">
+          {/* <img
             className="h-12 w-60 mx-auto rounded-md"
             src="/public/search.png"
             alt=""
-          />
+          /> */}
+          Search Here
         </span>
       </button>
       {/* <label htmlFor="my_modal_7" className="btn">open modal</label> */}
 
       {/* Put this part before </body> tag */}
       <dialog id="my_modal_3" className="modal">
-        <div className="modal-box h-80 dark:bg-gray-900">
+        <div className="modal-box bg-slate-50 h-80 dark:bg-gray-900">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">

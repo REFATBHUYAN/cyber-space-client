@@ -4,18 +4,21 @@ import { Link } from "react-router-dom";
 import { BiHeart } from "react-icons/bi";
 
 const Footer = () => {
-  
   return (
-    <div className="w-full mx-auto pb-10 bg-[#1E293B] relative">
+    <div className="w-full mx-auto pb-10 bg-slate-900 relative">
       <Container>
-        <footer className="footer p-10 text-slate-400  rounded-md">
+        <footer className="footer py-10 text-slate-400  rounded-md">
           <aside>
             <Link
               to="/"
               className="normal-case text-xl flex items-center gap-2"
             >
-              <img className="h-10 w-10" src="/cs-icon.svg" alt="" />
-              <span className="text-indigo-600 font-semibold text-4xl font-unica">
+              <img
+                className="block h-10 w-10"
+                src="/favicon.ico"
+                alt="Your Company"
+              />
+              <span className="text-indigo-600 hidden md:block text-4xl tracking-[-4px] font-unica">
                 CYBERSPACE
               </span>
             </Link>
@@ -45,43 +48,47 @@ const Footer = () => {
               </span>
             </p>
           </aside>
-          <nav>
-            <header className="footer-title text-base-100">Company</header>
-            <a className="link no-underline hover:text-indigo-700">About Us</a>
-            <a className="link no-underline hover:text-indigo-700">Account</a>
-            <a className="link no-underline hover:text-indigo-700">Pricing</a>
-            <a className="link no-underline hover:text-indigo-700">Donate</a>
-          </nav>
-          <nav>
-            <header className="footer-title text-base-100">SISTER</header>
-            <a className="link no-underline hover:text-indigo-700">World</a>
-            <a className="link no-underline hover:text-indigo-700">Blog</a>
-            <a className="link no-underline hover:text-indigo-700">Shop</a>
-            <a className="link no-underline hover:text-indigo-700">Digital</a>
-          </nav>
-          <nav>
-            <header className="footer-title text-base-100">HELP CENTER</header>
-            <a className="link no-underline hover:text-indigo-700">Contact</a>
-            <a className="link no-underline hover:text-indigo-700">Support</a>
-            <a className="link no-underline hover:text-indigo-700">FAQs</a>
-            <a className="link no-underline hover:text-indigo-700">DMCA</a>
-          </nav>
-          <nav>
-            <header className="footer-title text-base-100">POLICY</header>
-            <a className="link no-underline hover:text-indigo-700">
-              Terms of Service
-            </a>
-            <a className="link no-underline hover:text-indigo-700">
-              Privacy Policy
-            </a>
-            <a className="link no-underline hover:text-indigo-700">
-              Cookies Policy
-            </a>
-            <a className="link no-underline hover:text-indigo-700">DMCA</a>
-          </nav>
+          <div className="grid grid-cols-2 md:grid-cols-4 w-full gap-5">
+            <nav className="space-y-2 flex flex-col">
+              <header className="font-bold text-slate-300 ">COMPANY</header>
+              <a className="link no-underline hover:text-indigo-700">
+                About Us
+              </a>
+              <a className="link no-underline hover:text-indigo-700">Account</a>
+              <a className="link no-underline hover:text-indigo-700">Pricing</a>
+              <a className="link no-underline hover:text-indigo-700">Donate</a>
+            </nav>
+            <nav className="space-y-2 flex flex-col">
+              <header className="font-bold text-slate-300">SISTER</header>
+              <a className="link no-underline hover:text-indigo-700">World</a>
+              <a className="link no-underline hover:text-indigo-700">Blog</a>
+              <a className="link no-underline hover:text-indigo-700">Shop</a>
+              <a className="link no-underline hover:text-indigo-700">Digital</a>
+            </nav>
+            <nav className="space-y-2 flex flex-col">
+              <header className="font-bold text-slate-300">HELP CENTER</header>
+              <a className="link no-underline hover:text-indigo-700">Contact</a>
+              <a className="link no-underline hover:text-indigo-700">Support</a>
+              <a className="link no-underline hover:text-indigo-700">FAQs</a>
+              <a className="link no-underline hover:text-indigo-700">DMCA</a>
+            </nav>
+            <nav className="space-y-2 flex flex-col">
+              <header className="font-bold text-slate-300">POLICY</header>
+              <a className="link no-underline hover:text-indigo-700">
+                Terms of Service
+              </a>
+              <a className="link no-underline hover:text-indigo-700">
+                Privacy Policy
+              </a>
+              <a className="link no-underline hover:text-indigo-700">
+                Cookies Policy
+              </a>
+              <a className="link no-underline hover:text-indigo-700">DMCA</a>
+            </nav>
+          </div>
         </footer>
         <div className="divider bg-[#334155] h-[1px] my-0"></div>
-        <footer className="footer items-center p-4 text-slate-400">
+        <footer className="footer items-center py-4 text-slate-400">
           <aside className="items-center grid-flow-col">
             <svg
               xmlns="http://www.w3.org/2000/svg"

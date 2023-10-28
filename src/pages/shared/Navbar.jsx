@@ -30,7 +30,7 @@ const Navbar = () => {
     // setDarkMode(!darkMode);
   };
   return (
-    <div className="fixed w-full mx-auto z-10 top-0 bg-slate-50 dark:bg-slate-800">
+    <div className="fixed w-full mx-auto z-10 top-0 bg-slate-50 dark:bg-slate-900">
       {/* {<TopNote></TopNote>} */}
       <TopNote2></TopNote2>
       <Container>
