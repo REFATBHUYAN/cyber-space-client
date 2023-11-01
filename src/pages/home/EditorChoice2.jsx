@@ -59,8 +59,8 @@ const EditorChoice2 = () => {
                 <button className="absolute text-left left-4 truncate w-11/12 bottom-4 font-semibold text-lg text-white">
                   Microsoft Office 2021
                 </button>
-                <button className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10 absolute top-4 left-4">
-                  WINDOWS
+                <button className="windows">
+                  windows
                 </button>
               </div>
               <div className="h-full md:h-60 aspect-square w-full md:w-60 rounded-xl overflow-hidden bg-repeat-round relative bg-gradient-to-b from-transparent to-slate-900">

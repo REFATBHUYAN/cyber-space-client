@@ -2,7 +2,7 @@ import React from "react";
 import { BiBoltCircle } from "react-icons/bi";
 import Container from "../../components/Container";
 
-const PopularPost = () => {
+const TrandingNow = () => {
   return (
     <div className=" py-10 text-slate-700">
       <Container>
@@ -99,4 +99,4 @@ const PopularPost = () => {
   );
 };
 
-export default PopularPost;
+export default TrandingNow;
