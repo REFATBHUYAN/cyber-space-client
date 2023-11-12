@@ -22,18 +22,17 @@ const Footer = () => {
                 CYBERSPACE
               </span>
             </Link>
-            <p>
-              Home of pre-activated Windows and Softwares. One <br /> click
-              download and installation for the most popular <br /> softwares.
-              Always stay updated with us.
-              <br />
-              <span className="flex gap-1 mt-4">
+            <p className="w-[350px] md:w-96">
+              Home of pre-activated Windows and Softwares. One click download
+              and installation for the most popular softwares. Always stay
+              updated with us.
+              <span className="flex items-center gap-1 mt-4">
                 Maintained with{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-heart"
-                  width="24"
-                  height="24"
+                  class="icon icon-tabler icon-tabler-heart-filled"
+                  width="16"
+                  height="16"
                   viewBox="0 0 24 24"
                   stroke-width="2"
                   stroke="currentColor"
@@ -42,14 +41,18 @@ const Footer = () => {
                   stroke-linejoin="round"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
-                </svg>{" "}
+                  <path
+                    d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z"
+                    stroke-width="0"
+                    fill="currentColor"
+                  ></path>
+                </svg>
                 by Team#CS!
               </span>
             </p>
           </aside>
           <div className="grid grid-cols-2 md:grid-cols-4 w-full gap-5">
-            <nav className="space-y-2 flex flex-col">
+            <nav className="space-y-5 flex flex-col">
               <header className="font-bold text-slate-300 ">COMPANY</header>
               <a className="link no-underline hover:text-indigo-700">
                 About Us
@@ -58,21 +61,21 @@ const Footer = () => {
               <a className="link no-underline hover:text-indigo-700">Pricing</a>
               <a className="link no-underline hover:text-indigo-700">Donate</a>
             </nav>
-            <nav className="space-y-2 flex flex-col">
+            <nav className="space-y-5 flex flex-col">
               <header className="font-bold text-slate-300">SISTER</header>
               <a className="link no-underline hover:text-indigo-700">World</a>
               <a className="link no-underline hover:text-indigo-700">Blog</a>
               <a className="link no-underline hover:text-indigo-700">Shop</a>
               <a className="link no-underline hover:text-indigo-700">Digital</a>
             </nav>
-            <nav className="space-y-2 flex flex-col">
+            <nav className="space-y-5 flex flex-col mt-6 md:mt-0">
               <header className="font-bold text-slate-300">HELP CENTER</header>
               <a className="link no-underline hover:text-indigo-700">Contact</a>
               <a className="link no-underline hover:text-indigo-700">Support</a>
               <a className="link no-underline hover:text-indigo-700">FAQs</a>
               <a className="link no-underline hover:text-indigo-700">DMCA</a>
             </nav>
-            <nav className="space-y-2 flex flex-col">
+            <nav className="space-y-5 flex flex-col mt-6 md:mt-0">
               <header className="font-bold text-slate-300">POLICY</header>
               <a className="link no-underline hover:text-indigo-700">
                 Terms of Service

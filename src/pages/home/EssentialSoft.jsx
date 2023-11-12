@@ -26,7 +26,7 @@ const EssentialSoft = () => {
             Essential Soft
           </span>
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 mx-auto">
           <div>
             <div className="flex  items-center gap-3 my-2 py-1">
               <img className="w-20 h-20 rounded-md" src="/idm.png" alt="" />

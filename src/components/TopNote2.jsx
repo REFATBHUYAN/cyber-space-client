@@ -4,7 +4,7 @@ import { XMarkIcon } from "@heroicons/react/20/solid";
 const TopNote2 = () => {
   return (
     <div className="flex items-center gap-x-6 bg-indigo-600 dark:bg-slate-700 px-6 py-1.5 sm:px-3.5 sm:before:flex-1">
-      <p className="text-sm leading-6 text-white flex">
+      <p className="text-xs md:text-sm leading-6 text-white flex">
         <a href="#" className="flex gap-1">
           <strong className="font-semibold"></strong>
           <span aria-hidden="true">
@@ -24,7 +24,7 @@ const TopNote2 = () => {
               <path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z"></path>
             </svg>
           </span>
-          The all new CyberSpace v6 version live now. Enjoy!&nbsp;
+          CyberSpace v6 version live now. Enjoy!&nbsp;
           
         </a>
       </p>

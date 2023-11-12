@@ -5,7 +5,7 @@ import Container from "../../components/Container";
 const TrandingNow = () => {
   return (
     <div className=" py-10 text-slate-700">
-      <Container>
+      <>
         <h1 className="flex items-center gap-2 mb-8">
           {" "}
           <svg
@@ -94,7 +94,7 @@ const TrandingNow = () => {
           </div>
           
         </div>
-      </Container>
+      </>
     </div>
   );
 };

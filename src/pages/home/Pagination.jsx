@@ -30,7 +30,7 @@ const Pagination = () => {
         </a>
         <a
           href="#"
-          className="relative inline-flex items-center rounded-md px-2 py-2 text-slate-400 hover:text-white ring-1 ring-inset ring-gray-300 hover:ring-0 hover:bg-indigo-700 dark:text-slate-100 focus:z-20 focus:outline-offset-0 h-10 w-[70px]"
+          className="relative inline-flex items-center rounded-md px-2 justify-center py-2 text-slate-400 hover:text-white ring-1 ring-inset ring-gray-300 hover:ring-0 hover:bg-indigo-700 dark:text-slate-100 focus:z-20 focus:outline-offset-0 h-10 w-[90px]"
         >
           <span className="sr-only text-slate-400 ">Prev</span>
           <svg
@@ -94,15 +94,15 @@ const Pagination = () => {
 
         <a
           href="#"
-          className="relative inline-flex items-center hover:text-white rounded-md px-2 py-2 text-gray-400 ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0 h-10 w-[70px]"
+          className="relative inline-flex items-center justify-center hover:text-white rounded-md px-2 py-2 text-gray-400 ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0 h-10 w-[90px]"
         >
           <span className="sr-only text-slate-700">Next</span>
           Next
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-arrow-narrow-right"
-            width="40"
-            height="40"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
             stroke-width="2"
             stroke="currentColor"

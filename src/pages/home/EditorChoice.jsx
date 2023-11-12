@@ -105,13 +105,13 @@ const EditorChoice = () => {
         <div>
           <div className="w-full grid grid-cols-2 md:grid-cols-5 gap-6 mx-auto">
             {datas.map((data, i) => (
-              <div key={data.id} className={`h-full  w-full aspect-square  rounded-xl overflow-hidden bg-repeat-round relative bg-gradient-to-b from-slate-100 to-slate-900 ${i === 0 ? "col-span-2 row-span-2" : ""}`}>
+              <div key={data.id} className={`h-full  w-full aspect-square  rounded-xl overflow-hidden bg-repeat-round relative bg-gradient-to-b from-slate-500 to-slate-900 ${i === 0 ? "col-span-2 row-span-2" : ""}`}>
                 <img
                   className="absolute object-fill h-full w-full opacity-60"
                   src={data.img}
                   alt=""
                 />
-                <h1 className="absolute left-4 truncate w-11/12 text-left bottom-4 font-semibold text-lg text-white">
+                <h1 className="absolute left-4 truncate pr-4 w-11/12 text-left bottom-4 font-semibold text-lg text-white">
                   {data.name}
                 </h1>
                 <button className={`${data.category}`}>

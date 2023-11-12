@@ -4,6 +4,7 @@ import Navbar from "../pages/shared/Navbar";
 import Footer from "../pages/shared/Footer";
 import TopNote from "../components/TopNote";
 import Navbar2 from "../pages/shared/Navbar2";
+import TopNote2 from "../components/TopNote2";
 // import { Scrollbar } from "react-scrollbars-custom";
 // import { Scrollbars } from "rc-scrollbars";
 

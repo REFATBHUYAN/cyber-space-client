@@ -1,34 +1,30 @@
 import React from "react";
-import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { CheckCircleIcon } from "@heroicons/react/20/solid";
 
 const benefits = [
-  'Web Development',
-  'Graphic Design',
-  'Video Editing',
-  'UI/UX Design',
-  'Social Media Manager',
-  'Boosting Service',
-]
-
+  "Web Development",
+  "Graphic Design",
+  "Video Editing",
+  "UI/UX Design",
+  "Social Media Manager",
+  "Boosting Service",
+];
 
 const BusinessSection2 = () => {
   return (
     <div className="dark:bg-slate-800  py-16">
       <div className="relative isolate">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="mx-auto flex max-w-2xl flex-col gap-16  px-6 py-16 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
-            <img
-              className="w-[420px] h-[320px]"
-              src="/laptop.png"
-              alt=""
-            />
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="mx-auto flex max-w-2xl flex-col gap-16 py-16 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
+            <img className="w-[420px]" src="/laptop.png" alt="" />
             <div className="w-full flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-slate-700 dark:text-white">
-              Need an online presence?
+                Need an online presence?
               </h2>
               <p className="mt-6 text-lg leading-8 text-slate-500 dark:text-white">
-              CyberSpace Digital is here to help you shape your dream! We are a creative agency providing various digital services to renowned brands. List of services that we offer...
-
+                CyberSpace Digital is here to help you shape your dream! We are
+                a creative agency providing various digital services to renowned
+                brands. List of services that we offer...
               </p>
               <ul
                 role="list"
@@ -47,9 +43,26 @@ const BusinessSection2 = () => {
               <div className="mt-10 flex">
                 <a
                   href="#"
-                  className="text-sm font-semibold leading-6 text-indigo-400 hover:text-indigo-700"
+                  className="text-sm flex gap-1 font-semibold leading-6 text-indigo-400 hover:text-indigo-700"
                 >
-                  Contact us now <span aria-hidden="true">&rarr;</span>
+                  Contact us now{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l14 0"></path>
+                    <path d="M15 16l4 -4"></path>
+                    <path d="M15 8l4 4"></path>
+                  </svg>
                 </a>
               </div>
             </div>

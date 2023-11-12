@@ -5,7 +5,7 @@ import Container from "../../components/Container";
 const RecentComments = () => {
   return (
     <div className="py-5 text-slate-700">
-      <Container>
+      <>
         <h1 className="flex items-center gap-2 mb-10">
           {" "}
           <svg
@@ -103,7 +103,7 @@ const RecentComments = () => {
           </div>
           
         </div>
-      </Container>
+      </>
     </div>
   );
 };

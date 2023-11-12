@@ -6,7 +6,7 @@ const Benifits = () => {
     <div className="pt-20 pb-20 bg-slate-50 dark:bg-slate-800">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="group flex flex-col justify-center items-center gap-3 text-slate-400 ">
+          <div className="group flex cursor-pointer flex-col justify-center items-center gap-3 text-slate-400 ">
             <div className=" h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 group-hover:bg-indigo-700 group-hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ const Benifits = () => {
               malwares.
             </p>
           </div>
-          <div className="flex group flex-col justify-center items-center gap-3 text-slate-400  ">
+          <div className="flex group cursor-pointer flex-col justify-center items-center gap-3 text-slate-400  ">
             <div className=" h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 group-hover:bg-indigo-700 group-hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ const Benifits = () => {
               itself.
             </p>
           </div>
-          <div className="flex group flex-col justify-center items-center gap-3 text-slate-400 ">
+          <div className="flex group cursor-pointer flex-col justify-center items-center gap-3 text-slate-400 ">
             <div className=" h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 group-hover:bg-indigo-700 group-hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ const Benifits = () => {
               The software will be auto activated during the installation.
             </p>
           </div>
-          <div className="flex group flex-col justify-center items-center gap-3 text-slate-400 ">
+          <div className="flex group cursor-pointer flex-col justify-center items-center gap-3 text-slate-400 ">
             <div className=" h-20 w-20 rounded-md bg-slate-100 p-6 text-indigo-700 group-hover:bg-indigo-700 group-hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

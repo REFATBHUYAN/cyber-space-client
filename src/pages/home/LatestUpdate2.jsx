@@ -112,11 +112,11 @@ const LatestUpdate2 = () => {
             </span>
           </h1>
 
-          <div className="mt-10 space-y-10">
+          <div className="mt-10 space-y-16 md:space-y-10">
             {posts.map((post) => (
               <article
                 key={post.id}
-                className="relative isolate flex flex-col gap-8 lg:flex-row"
+                className="relative isolate flex flex-col gap-8 lg:flex-row "
               >
                 <div className="relative aspect-square w-1/2 lg:w-56 lg:shrink-0">
                   <img
@@ -127,7 +127,7 @@ const LatestUpdate2 = () => {
                   <div className="absolute inset-0 rounded-md ring-1 ring-inset ring-gray-900/10" />
                 </div>
                 <div>
-                  <div className="flex items-center gap-x-4 text-xs ">
+                  <div className="flex items-center gap-x-3 md:gap-x-4 text-xs ">
                     <time
                       dateTime={post.datetime}
                       className="inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10 "
@@ -152,7 +152,7 @@ const LatestUpdate2 = () => {
                       {post.description}
                     </p>
                   </div>
-                  <div className="mt-6 flex border-t border-gray-900/5 pt-6">
+                  <div className="mt-4 flex border-t border-gray-900/5 pt-6">
                     <div className="relative flex items-center gap-x-4 text-gray-600 dark:text-slate-300">
                       <p className="flex items-center gap-2 text-xs">
                         {" "}
