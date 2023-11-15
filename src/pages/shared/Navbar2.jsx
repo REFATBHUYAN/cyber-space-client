@@ -17,41 +17,43 @@ function classNames(...classes) {
 
 const notifications = [
   {
-    title: "Your Profile",
-    photo: "/idm.png",
+    title: "Emilia Gates",
+    photo: "/image 5.png",
     comment: "Replied to your comment",
     date: "Today",
     time: "9:00 PM",
     href: "#",
   },
   {
-    title: "Your Profile",
-    photo: "/idm.png",
+    title: "Tim Reborn",
+    photo:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     comment: "Replied to your comment",
     date: "Today",
     time: "9:00 PM",
     href: "#",
   },
   {
-    title: "Your Profile",
+    title: "Expiring soon",
     photo: "/idm.png",
-    comment: "Replied to your comment",
+    comment: "Your pro plan will end on 20 Oct",
+    date: "Today",
+    time: "9:00 PM",
+    href: "#",
+  },
+
+  {
+    title: "Update available",
+    photo: "/idm.png",
+    comment: "Internet Download Manager 6.25.4",
     date: "Today",
     time: "9:00 PM",
     href: "#",
   },
   {
-    title: "Your Profile",
-    photo: "/idm.png",
-    comment: "Replied to your comment",
-    date: "Today",
-    time: "9:00 PM",
-    href: "#",
-  },
-  {
-    title: "Your Profile",
-    photo: "/idm.png",
-    comment: "Replied to your comment",
+    title: "Update available",
+    photo: "/mo.png",
+    comment: "Microsoft Office 2021",
     date: "Today",
     time: "9:00 PM",
     href: "#",
@@ -97,6 +99,16 @@ const notificationBoth = (
       leaveTo="transform opacity-0 scale-95"
     >
       <Menu.Items className="absolute right-0 z-10 mt-2 w-72 md:w-96 origin-top-right rounded-md bg-white dark:bg-slate-700 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <div className="pl-4 pt-3  rounded-md mb-2 h-11">
+          <div className="flex justify-between ">
+            <h1 className="text-slate-700 font-bold text-base dark:text-slate-100">
+              Notifications
+            </h1>
+            <p className="mr-6 text-indigo-700 text-xs bg-indigo-100 py-1 px-1.5 rounded-md">
+              3 new
+            </p>
+          </div>
+        </div>
         {notifications.map((item) => (
           <Menu.Item key={item.name}>
             {({ active }) => (
@@ -111,7 +123,7 @@ const notificationBoth = (
                   <div className="flex gap-4">
                     <label tabIndex={0} className="">
                       <div className="w-10">
-                        <img className="w-10 rounded-md" src="/refat.png" />
+                        <img className="w-10 rounded-full" src={item.photo} />
                       </div>
                     </label>
                     <div className="text-left">
@@ -150,6 +162,30 @@ const notificationBoth = (
             )}
           </Menu.Item>
         ))}
+        <div className="bg-indigo-700 h-9 text-center mx-4 rounded-md my-4 flex items-center gap-2 justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-circle-check-filled text-white"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
+              stroke-width="0"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <button className="text-white my-auto h-full">
+            Mark all as Read
+          </button>
+        </div>
       </Menu.Items>
     </Transition>
   </Menu>
@@ -200,14 +236,14 @@ const profileNav = (
                       alt=""
                     />
                   </div>
-                    <div className="ml-3">
-                      <p className="text-sm font-medium text-slate-700 dark:text-slate-50">
-                        Tom Cook
-                      </p>
-                      <p className="text-xs font-medium text-slate-400 dark:text-slate-500">
-                        Pro User
-                      </p>
-                    </div>
+                  <div className="ml-3">
+                    <p className="text-sm font-medium text-slate-700 dark:text-slate-50">
+                      Tom Cook
+                    </p>
+                    <p className="text-xs font-medium text-slate-400 dark:text-slate-500">
+                      Pro User
+                    </p>
+                  </div>
                 </div>
               </a>
             )}

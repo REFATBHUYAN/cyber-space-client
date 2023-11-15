@@ -10,7 +10,7 @@ const datas = [
   },
   {
     id: 2,
-    category: "multimedia",
+    category: "security",
     name: "Pot Player",
     img: "/pp.png",
   },
@@ -58,7 +58,7 @@ const datas = [
   },
   {
     id: 10,
-    category: "utility",
+    category: "misc",
     name: "Wondershare Filmora",
     img: "/wf.png",
   },
@@ -114,7 +114,7 @@ const EditorChoice = () => {
                 <h1 className="absolute left-4 truncate pr-4 w-11/12 text-left bottom-4 font-semibold text-lg text-slate-300 hover:text-white dark:text-slate-300 hover:dark:text-white">
                   {data.name}
                 </h1>
-                <button className={`${data.category}`}>
+                <button className={`${data.category} absolute top-4 left-4`}>
                  {data.category}
                 </button>
               </div>

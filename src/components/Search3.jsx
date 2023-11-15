@@ -74,14 +74,14 @@ const Search3 = () => {
 
       {/* Put this part before </body> tag */}
       <input type="checkbox" id="my_modal_7" className="modal-toggle" />
-      <div className="modal">
-        <div className="modal-box bg-slate-50 h-96 dark:bg-gray-900 scroll-py-2 overflow-y-auto">
+      <div className="modal ">
+        <div className="modal-box bg-slate-50 h-80 dark:bg-gray-900 overflow-y-auto rounded-md p-0">
           <div className="w-80 md:w-full max-w-[670px] h-12 mx-auto relative ">
             <label
               for="default-search"
               className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
             >
-              Search
+              Search here
             </label>
             <div className="relative">
               <div className="absolute inset-y-0 left-2 flex items-center px-3 pointer-events-none">
@@ -106,13 +106,13 @@ const Search3 = () => {
                 value={searchValue}
                 type="search"
                 id="default-search"
-                className="block w-full p-4 pl-12 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-slate-100"
+                className="block w-full p-4 pl-12 text-sm text-gray-900 border border-gray-50 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-800  dark:text-slate-100 focus:ring-gray-50 focus:border-gray-50 dark:focus:ring-gray-800 dark:focus:border-gray-800"
                 placeholder="Search for your desired software..."
                 required
               />
               <button
                 type="submit"
-                className="text-slate-400 absolute right-5 bottom-2.5   font-medium py-2"
+                className="text-slate-400 absolute right-8 bottom-2.5   font-medium py-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,9 +138,9 @@ const Search3 = () => {
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-file-x text-center mx-auto"
-                    width="32"
-                    height="40"
+                    class="icon icon-tabler icon-tabler-file-x text-center mx-auto text-slate-400 dark:text-slate-100"
+                    width="50"
+                    height="60"
                     viewBox="0 0 24 24"
                     stroke-width="2"
                     stroke="currentColor"
@@ -157,7 +157,7 @@ const Search3 = () => {
                 <h1 className="font-semibold text-slate-700 dark:text-slate-100 ">
                   No results found for "{searchValue}"
                 </h1>
-                <p>
+                <p className="text-slate-400 dark:text-slate-200">
                   We can’t find anything with that term at the moment, <br />{" "}
                   try searching something else.
                 </p>
@@ -168,7 +168,7 @@ const Search3 = () => {
                 {filteredData.map((item) => (
                   <div
                     key={item.title}
-                    className="flex border-b-[1px] border-slate-100 p-2 justify-between  items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50 dark:hover:bg-gray-800 "
+                    className="flex border-b-[1px] border-slate-100 dark:border-slate-700 p-4 justify-between  items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50 dark:hover:bg-gray-800 "
                   >
                     <div className="flex gap-2">
                       <img

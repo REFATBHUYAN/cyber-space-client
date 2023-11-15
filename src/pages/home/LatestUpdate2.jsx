@@ -10,7 +10,7 @@ const posts = [
     imageUrl: "/idm.png",
     date: "6.41.2",
     datetime: "2020-03-16",
-    category: { title: "WEB", href: "#" },
+    category: { title: "web", href: "#" },
     author: {
       name: "02 Oct 2023",
       role: "15 Comments",
@@ -26,7 +26,7 @@ const posts = [
     imageUrl: "/mo.png",
     date: "6.41.2",
     datetime: "2020-03-16",
-    category: { title: "WINDOWS", href: "#" },
+    category: { title: "windows", href: "#" },
     author: {
       name: "02 Oct 2023",
       role: "15 Comments",
@@ -42,7 +42,7 @@ const posts = [
     imageUrl: "/pp.png",
     date: "6.41.2",
     datetime: "2020-03-16",
-    category: { title: "MULTIMEDIA", href: "#" },
+    category: { title: "multimedia", href: "#" },
     author: {
       name: "02 Oct 2023",
       role: "15 Comments",
@@ -58,7 +58,7 @@ const posts = [
     imageUrl: "/wf.png",
     date: "6.41.2",
     datetime: "2020-03-16",
-    category: { title: "UTILITY", href: "#" },
+    category: { title: "utility", href: "#" },
     author: {
       name: "02 Oct 2023",
       role: "15 Comments",
@@ -74,7 +74,7 @@ const posts = [
     imageUrl: "/w11.png",
     date: "6.41.2",
     datetime: "2020-03-16",
-    category: { title: "WINDOWS", href: "#" },
+    category: { title: "windows", href: "#" },
     author: {
       name: "02 Oct 2023",
       role: "15 Comments",
@@ -134,12 +134,13 @@ const LatestUpdate2 = () => {
                     >
                       {post.date}
                     </time>
-                    <a
+                    <button
                       href={post.category.href}
-                      className="inline-flex items-center rounded-md bg-green-50 dark:bg-green-500/10 px-2 py-1 text-xs font-medium text-green-700 dark:text-green-400 ring-1 ring-inset ring-green-600/20 dark:ring-green-500/20"
+                      className={`${post?.category?.title}`}
+                      // className="inline-flex items-center rounded-md bg-green-50 dark:bg-green-500/10 px-2 py-1 text-xs font-medium text-green-700 dark:text-green-400 ring-1 ring-inset ring-green-600/20 dark:ring-green-500/20"
                     >
                       {post.category.title}
-                    </a>
+                    </button>
                   </div>
                   <div className="group relative max-w-xl">
                     <h3 className="mt-3 text-lg font-semibold leading-6 text-slate-700 hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-700">
