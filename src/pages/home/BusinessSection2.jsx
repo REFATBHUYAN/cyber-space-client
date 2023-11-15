@@ -12,7 +12,7 @@ const benefits = [
 
 const BusinessSection2 = () => {
   return (
-    <div className="dark:bg-slate-800  py-16">
+    <div className="dark:bg-slate-900 py-16">
       <div className="relative isolate">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="mx-auto flex max-w-2xl flex-col gap-16 py-16 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
@@ -21,14 +21,14 @@ const BusinessSection2 = () => {
               <h2 className="text-3xl font-bold tracking-tight text-slate-700 dark:text-white">
                 Need an online presence?
               </h2>
-              <p className="mt-6 text-lg leading-8 text-slate-500 dark:text-white">
+              <p className="mt-6 leading-8 text-slate-500 dark:text-slate-400">
                 CyberSpace Digital is here to help you shape your dream! We are
                 a creative agency providing various digital services to renowned
                 brands. List of services that we offer...
               </p>
               <ul
                 role="list"
-                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-slate-500 leading-7  dark:text-white sm:grid-cols-2"
+                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-slate-500 leading-7 dark:text-slate-400 sm:grid-cols-2"
               >
                 {benefits.map((benefit) => (
                   <li key={benefit} className="flex gap-x-3">
@@ -41,29 +41,26 @@ const BusinessSection2 = () => {
                 ))}
               </ul>
               <div className="mt-10 flex">
-                <a
-                  href="#"
-                  className="text-sm flex gap-1 font-semibold leading-6 text-indigo-400 hover:text-indigo-700"
+              <button className="btn btn-primary bg-indigo-700 hover:bg-indigo-600 border-0 capitalize">
+                Get Started Now{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 >
-                  Contact us now{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-arrow-narrow-right"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M5 12l14 0"></path>
-                    <path d="M15 16l4 -4"></path>
-                    <path d="M15 8l4 4"></path>
-                  </svg>
-                </a>
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 12l14 0"></path>
+                  <path d="M15 16l4 -4"></path>
+                  <path d="M15 8l4 4"></path>
+                </svg>
+              </button>
               </div>
             </div>
           </div>

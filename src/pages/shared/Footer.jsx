@@ -5,7 +5,7 @@ import { BiHeart } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <div className="w-full mx-auto pb-10 bg-slate-900 relative">
+    <div className="w-full mx-auto pb-10 bg-slate-900 dark:bg-slate-950 relative">
       <Container>
         <footer className="footer py-10 text-slate-400  rounded-md">
           <aside>
@@ -22,7 +22,7 @@ const Footer = () => {
                 CYBERSPACE
               </span>
             </Link>
-            <p className="w-[350px] md:w-96">
+            <p className="w-[350px] md:w-96 leading-6">
               Home of pre-activated Windows and Softwares. One click download
               and installation for the most popular softwares. Always stay
               updated with us.

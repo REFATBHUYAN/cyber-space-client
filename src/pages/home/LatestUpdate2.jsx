@@ -122,38 +122,38 @@ const LatestUpdate2 = () => {
                   <img
                     src={post.imageUrl}
                     alt=""
-                    className="absolute inset-0 h-full aspect-square w-full rounded-md bg-gray-50 object-cover"
+                    className="absolute inset-0 h-full aspect-square w-full rounded-xl bg-slate-50 object-cover"
                   />
-                  <div className="absolute inset-0 rounded-md ring-1 ring-inset ring-gray-900/10" />
+                  {/* <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-slate-900/10 dark:ring-slate-100/10" /> */}
                 </div>
                 <div>
                   <div className="flex items-center gap-x-3 md:gap-x-4 text-xs ">
                     <time
                       dateTime={post.datetime}
-                      className="inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10 "
+                      className="inline-flex items-center rounded-md bg-indigo-50 dark:bg-indigo-400/10 px-2 py-1 text-xs font-medium text-indigo-700 dark:text-indigo-400 ring-1 ring-inset ring-indigo-700/10 dark:ring-indigo-400/30"
                     >
                       {post.date}
                     </time>
                     <a
                       href={post.category.href}
-                      className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
+                      className="inline-flex items-center rounded-md bg-green-50 dark:bg-green-500/10 px-2 py-1 text-xs font-medium text-green-700 dark:text-green-400 ring-1 ring-inset ring-green-600/20 dark:ring-green-500/20"
                     >
                       {post.category.title}
                     </a>
                   </div>
                   <div className="group relative max-w-xl">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 dark:text-slate-50">
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-slate-700 hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-700">
                       <a href={post.href}>
                         <span className="absolute inset-0" />
                         {post.title}
                       </a>
                     </h3>
-                    <p className="mt-5 text-sm leading-6 text-gray-600 dark:text-slate-300">
+                    <p className="mt-5 text-sm leading-6 text-slate-500 dark:text-slate-400">
                       {post.description}
                     </p>
                   </div>
-                  <div className="mt-4 flex border-t border-gray-900/5 pt-6">
-                    <div className="relative flex items-center gap-x-4 text-gray-600 dark:text-slate-300">
+                  <div className="mt-4 flex border-t border-slate-900/5 pt-6">
+                    <div className="relative flex items-center gap-x-4 text-slate-600 dark:text-slate-300">
                       <p className="flex items-center gap-2 text-xs">
                         {" "}
                         <svg

@@ -3,7 +3,7 @@ import Container from "../../components/Container";
 
 const EditorChoice2 = () => {
   return (
-    <div className="py-16 bg-slate-100 dark:bg-slate-900  w-full">
+    <div className="py-16 bg-slate-100 dark:bg-slate-950 w-full">
       <Container>
         <h1 className="flex items-center gap-2 mb-9">
           {" "}

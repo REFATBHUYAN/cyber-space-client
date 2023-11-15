@@ -96,15 +96,15 @@ const notificationBoth = (
       leaveFrom="transform opacity-100 scale-100"
       leaveTo="transform opacity-0 scale-95"
     >
-      <Menu.Items className="absolute right-0 z-10 mt-2 w-72 md:w-96 origin-top-right rounded-md bg-white dark:bg-gray-700 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+      <Menu.Items className="absolute right-0 z-10 mt-2 w-72 md:w-96 origin-top-right rounded-md bg-white dark:bg-slate-700 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
         {notifications.map((item) => (
           <Menu.Item key={item.name}>
             {({ active }) => (
               <a
                 href={item.href}
                 className={classNames(
-                  active ? "bg-gray-100 dark:bg-gray-800" : "",
-                  "block px-4 py-2 text-sm text-gray-700"
+                  active ? "bg-slate-100 dark:bg-slate-800" : "",
+                  "block px-4 py-2 text-sm text-slate-700"
                 )}
               >
                 <button className="flex gap-4 items-center justify-between w-full text-sm ">
@@ -187,7 +187,7 @@ const profileNav = (
       leaveFrom="transform opacity-100 scale-100"
       leaveTo="transform opacity-0 scale-95"
     >
-      <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+      <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-slate-200 dark:divide-slate-700 rounded-md bg-slate-50 dark:bg-slate-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
         <div className="p-4">
           <Menu.Item>
             {({ active }) => (
@@ -200,27 +200,27 @@ const profileNav = (
                       alt=""
                     />
                   </div>
-                  <div className="ml-3">
-                    <p className="text-sm font-medium text-slate-700 dark:text-slate-50 group-hover:text-gray-900 dark:group-hover:text-gray-50">
-                      Tom Cook
-                    </p>
-                    <p className="text-xs font-medium text-slate-500 group-hover:text-gray-700 dark:group-hover:text-gray-100">
-                      View profile
-                    </p>
-                  </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-slate-700 dark:text-slate-50">
+                        Tom Cook
+                      </p>
+                      <p className="text-xs font-medium text-slate-400 dark:text-slate-500">
+                        Pro User
+                      </p>
+                    </div>
                 </div>
               </a>
             )}
           </Menu.Item>
         </div>
-        <div className="py-1 dark:text-gray-50">
+        <div className="py-1 dark:text-slate-50">
           <Menu.Item>
             {({ active }) => (
               <a
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -251,7 +251,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -284,7 +284,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -316,7 +316,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -348,7 +348,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -378,7 +378,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -413,7 +413,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -445,7 +445,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -476,7 +476,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -508,7 +508,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -543,7 +543,7 @@ const profileNav = (
                 href="#"
                 className={classNames(
                   active
-                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                     : "text-slate-400 dark:text-slate-400 ",
                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                 )}
@@ -661,7 +661,7 @@ const Navbar2 = () => {
                   {/* Mobile menu button */}
                   {notificationBoth}
                   {profileNav}
-                  {/* <Popover.Button className="-mx-2 inline-flex items-center justify-center ml-4 rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none ">
+                  {/* <Popover.Button className="-mx-2 inline-flex items-center justify-center ml-4 rounded-md p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-500 focus:outline-none ">
                     <span className="sr-only">Open menu</span>
                     {open ? (
                       <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -783,7 +783,7 @@ const Navbar2 = () => {
                       leaveFrom="transform opacity-100 scale-100"
                       leaveTo="transform opacity-0 scale-95"
                     >
-                      <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-slate-200 dark:divide-slate-800 rounded-xl bg-slate-50 dark:bg-slate-900 shadow-lg ring-1 ring-slate-700 dark:ring-slate-800 ring-opacity-5 focus:outline-none">
                         <div className="p-4">
                           <Menu.Item>
                             {({ active }) => (
@@ -797,11 +797,11 @@ const Navbar2 = () => {
                                     />
                                   </div>
                                   <div className="ml-3">
-                                    <p className="text-sm font-medium text-slate-700 dark:text-slate-50 group-hover:text-gray-900 dark:group-hover:text-gray-50">
+                                    <p className="text-sm font-medium text-slate-700 dark:text-slate-50">
                                       Tom Cook
                                     </p>
-                                    <p className="text-xs font-medium text-slate-500 group-hover:text-gray-700 dark:group-hover:text-gray-100">
-                                      View profile
+                                    <p className="text-xs font-medium text-slate-400 dark:text-slate-500">
+                                      Pro User
                                     </p>
                                   </div>
                                 </div>
@@ -809,14 +809,14 @@ const Navbar2 = () => {
                             )}
                           </Menu.Item>
                         </div>
-                        <div className="py-1 dark:text-gray-50">
+                        <div className="py-1 dark:text-slate-50">
                           <Menu.Item>
                             {({ active }) => (
                               <a
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -851,7 +851,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -888,7 +888,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -924,7 +924,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -960,7 +960,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -994,7 +994,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -1021,7 +1021,7 @@ const Navbar2 = () => {
                                   <path d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
                                   <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
                                 </svg>
-                                Supports
+                                Support
                               </a>
                             )}
                           </Menu.Item>
@@ -1033,7 +1033,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -1069,7 +1069,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -1104,7 +1104,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -1140,7 +1140,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -1179,7 +1179,7 @@ const Navbar2 = () => {
                                 href="#"
                                 className={classNames(
                                   active
-                                    ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                    ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                     : "text-slate-400 dark:text-slate-400 ",
                                   "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                                 )}
@@ -1218,7 +1218,7 @@ const Navbar2 = () => {
             </div>
 
             {/* <Popover.Panel as="nav" className="lg:hidden" aria-label="Global">
-              <div className="border-t border-gray-200 pb-3 pt-4">
+              <div className="border-t border-slate-200 pb-3 pt-4">
                 <div className="mx-auto flex max-w-3xl items-center px-4 sm:px-6">
                   <div className="flex-shrink-0">
                     <img
@@ -1228,10 +1228,10 @@ const Navbar2 = () => {
                     />
                   </div>
                   <div className="ml-3">
-                    <div className="text-base font-medium text-gray-800">
+                    <div className="text-base font-medium text-slate-800">
                       {user.name}
                     </div>
-                    <div className="text-sm font-medium text-gray-500">
+                    <div className="text-sm font-medium text-slate-500">
                       {user.email}
                     </div>
                   </div>
@@ -1239,14 +1239,14 @@ const Navbar2 = () => {
                 </div>
                 <div className="mx-auto mt-3 max-w-3xl space-y-1 px-2 sm:px-4">
                   <Menu>
-                    <div className="py-1 dark:text-gray-50">
+                    <div className="py-1 dark:text-slate-50">
                       <Menu.Item>
                         {({ active }) => (
                           <a
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1281,7 +1281,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1318,7 +1318,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1354,7 +1354,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1390,7 +1390,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1424,7 +1424,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1463,7 +1463,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1499,7 +1499,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1534,7 +1534,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1570,7 +1570,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}
@@ -1609,7 +1609,7 @@ const Navbar2 = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-gray-100 dark:text-slate-400 dark:bg-gray-800 text-gray-400 hover:text-slate-700 dark:hover:text-slate-50"
+                                ? "bg-slate-100 dark:text-slate-400 dark:bg-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-50"
                                 : "text-slate-400 dark:text-slate-400 ",
                               "group flex items-center px-4 py-2 text-sm dark:text-slate-400"
                             )}

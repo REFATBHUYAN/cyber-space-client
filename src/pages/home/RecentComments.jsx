@@ -30,11 +30,11 @@ const RecentComments = () => {
         </h1>
         <div>
           <div className="flex  items-center gap-3 my-4">
-            <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
+            <img className="w-20 h-20 rounded-lg" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Tanz</h1>
-                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-700">Tanz</h1>
+                <button className="inline-flex items-center rounded-md bg-indigo-50 dark:bg-indigo-400/10 px-2 py-1 text-xs font-medium text-indigo-700 dark:text-indigo-400 ring-1 ring-inset ring-indigo-700/10 dark:ring-indigo-400/30">
                 02 Oct 2023
                 </button>
               </div>
@@ -42,11 +42,11 @@ const RecentComments = () => {
             </div>
           </div>
           <div className="flex  items-center gap-3 my-4">
-            <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
+            <img className="w-20 h-20 rounded-lg" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Afroza</h1>
-                <button className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-700">Afroza</h1>
+                <button className="inline-flex items-center rounded-md bg-indigo-50 dark:bg-indigo-400/10 px-2 py-1 text-xs font-medium text-indigo-700 dark:text-indigo-400 ring-1 ring-inset ring-indigo-700/10 dark:ring-indigo-400/30">
                 02 Oct 2023
                 </button>
               </div>
@@ -54,11 +54,11 @@ const RecentComments = () => {
             </div>
           </div>
           <div className="flex  items-center gap-3 my-4">
-            <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
+            <img className="w-20 h-20 rounded-lg" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Rokon</h1>
-                <button className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-700">Rokon</h1>
+                <button className="inline-flex items-center rounded-md bg-indigo-50 dark:bg-indigo-400/10 px-2 py-1 text-xs font-medium text-indigo-700 dark:text-indigo-400 ring-1 ring-inset ring-indigo-700/10 dark:ring-indigo-400/30">
                 02 Oct 2023
                 </button>
               </div>
@@ -66,11 +66,11 @@ const RecentComments = () => {
             </div>
           </div>
           <div className="flex  items-center gap-3 my-4">
-            <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
+            <img className="w-20 h-20 rounded-lg" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Lava</h1>
-                <button className="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-700">Lava</h1>
+                <button className="inline-flex items-center rounded-md bg-indigo-50 dark:bg-indigo-400/10 px-2 py-1 text-xs font-medium text-indigo-700 dark:text-indigo-400 ring-1 ring-inset ring-indigo-700/10 dark:ring-indigo-400/30">
                 02 Oct 2023
                 </button>
               </div>
@@ -78,11 +78,11 @@ const RecentComments = () => {
             </div>
           </div>
           <div className="flex  items-center gap-3 my-4">
-            <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
+            <img className="w-20 h-20 rounded-lg" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Tontu</h1>
-                <button className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-700">Tontu</h1>
+                <button className="inline-flex items-center rounded-md bg-indigo-50 dark:bg-indigo-400/10 px-2 py-1 text-xs font-medium text-indigo-700 dark:text-indigo-400 ring-1 ring-inset ring-indigo-700/10 dark:ring-indigo-400/30">
                 02 Oct 2023
                 </button>
               </div>
@@ -90,11 +90,11 @@ const RecentComments = () => {
             </div>
           </div>
           <div className="flex  items-center gap-3 my-4">
-            <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
+            <img className="w-20 h-20 rounded-lg" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Xuel</h1>
-                <button className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-700">Xuel</h1>
+                <button className="inline-flex items-center rounded-md bg-indigo-50 dark:bg-indigo-400/10 px-2 py-1 text-xs font-medium text-indigo-700 dark:text-indigo-400 ring-1 ring-inset ring-indigo-700/10 dark:ring-indigo-400/30">
                 02 Oct 2023
                 </button>
               </div>

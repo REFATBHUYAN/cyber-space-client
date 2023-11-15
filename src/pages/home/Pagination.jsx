@@ -4,12 +4,12 @@ const Pagination = () => {
   return (
     <div>
       <nav
-        className="isolate md:inline-flex -space-x-px text-center  flex flex-wrap gap-2 rounded-md"
+        className="isolate md:inline-flex -space-x-px text-center flex flex-wrap gap-2 rounded-lg"
         aria-label="Pagination"
       >
         <a
           href="#"
-          className="relative inline-flex items-center rounded-md w-10 h-10 px-2 py-2 text-gray-400 hover:text-white ring-1 hover:ring-0 ring-inset dark:text-slate-100 ring-gray-300  hover:bg-indigo-600 focus:z-20 focus:outline-offset-0"
+          className="relative inline-flex items-center rounded-md w-10 h-10 px-2 py-2 text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const Pagination = () => {
         </a>
         <a
           href="#"
-          className="relative inline-flex items-center rounded-md px-2 justify-center py-2 text-slate-400 hover:text-white ring-1 ring-inset ring-gray-300 hover:ring-0 hover:bg-indigo-700 dark:text-slate-100 focus:z-20 focus:outline-offset-0 h-10 w-[90px]"
+          className="relative inline-flex items-center rounded-md px-2 justify-center py-2 text-slate-400 hover:text-white ring-1 ring-inset ring-slate-300 dark:ring-slate-600 hover:ring-0 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0 h-10 w-[90px]"
         >
           <span className="sr-only text-slate-400 ">Prev</span>
           <svg
@@ -54,47 +54,47 @@ const Pagination = () => {
         </a>
         <a
           href="#"
-          className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0"
+          className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0"
         >
           1
         </a>
         <a
           href="#"
-          className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0"
+          className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0"
         >
           2
         </a>
         <a
           href="#"
-          className="relative rounded-md hidden items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0 md:inline-flex"
+          className="relative rounded-md hidden items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0 md:inline-flex"
         >
           3
         </a>
-        <span className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 dark:text-slate-100 ring-1 hover:ring-0 ring-inset ring-gray-300 focus:outline-offset-0">
+        <span className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-700 ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 focus:outline-offset-0">
           ...
         </span>
         <a
           href="#"
-          className="relative rounded-md hidden items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0 md:inline-flex"
+          className="relative rounded-md hidden items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0 md:inline-flex"
         >
           7
         </a>
         <a
           href="#"
-          className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0"
+          className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0"
         >
           8
         </a>
         <a
           href="#"
-          className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0"
+          className="relative rounded-md inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-400 hover:text-white ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0"
         >
           9
         </a>
 
         <a
           href="#"
-          className="relative inline-flex items-center justify-center hover:text-white rounded-md px-2 py-2 text-gray-400 ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0 h-10 w-[90px]"
+          className="relative inline-flex items-center justify-center hover:text-white rounded-md px-2 py-2 text-slate-400 ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0 h-10 w-[90px]"
         >
           <span className="sr-only text-slate-700">Next</span>
           Next
@@ -119,7 +119,7 @@ const Pagination = () => {
         </a>
         <a
           href="#"
-          className="relative inline-flex items-center rounded-md hover:text-white w-10 h-10 px-2 py-2 text-gray-400 ring-1 hover:ring-0 ring-inset ring-gray-300 hover:bg-indigo-600 dark:text-slate-100 focus:z-20 focus:outline-offset-0"
+          className="relative inline-flex items-center rounded-md hover:text-white w-10 h-10 px-2 py-2 text-slate-400 ring-1 hover:ring-0 ring-inset ring-slate-300 dark:ring-slate-600 hover:bg-indigo-700 focus:z-20 focus:outline-offset-0"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

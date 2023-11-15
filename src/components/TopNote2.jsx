@@ -3,7 +3,7 @@ import { XMarkIcon } from "@heroicons/react/20/solid";
 
 const TopNote2 = () => {
   return (
-    <div className="flex items-center gap-x-6 bg-indigo-600 dark:bg-slate-700 px-6 py-1.5 sm:px-3.5 sm:before:flex-1">
+    <div className="flex items-center gap-x-6 bg-indigo-700 dark:bg-indigo-700 px-6 py-1.5 sm:px-3.5 sm:before:flex-1">
       <p className="text-xs md:text-sm leading-6 text-white flex">
         <a href="#" className="flex gap-1">
           <strong className="font-semibold"></strong>
@@ -34,7 +34,7 @@ const TopNote2 = () => {
           className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
         >
           <span className="sr-only">Dismiss</span>
-          <XMarkIcon className="h-6 w-6 bg-[#4338CA] dark:bg-slate-900 rounded-full text-white" aria-hidden="true" />
+          <XMarkIcon className="h-6 w-6 bg-indigo-800 dark:bg-indigo-800 rounded-full text-white" aria-hidden="true" />
         </button>
       </div>
     </div>

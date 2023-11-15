@@ -29,7 +29,7 @@ const Home = () => {
               <Banner2></Banner2>
             </Container>
           </div>
-          <div className="w-full bg-slate-50 dark:bg-slate-800 py-8">
+          <div className="w-full bg-slate-50 dark:bg-slate-900 py-8">
             <Container>
               <div className="flex flex-col sm:flex-row gap-5">
                 <div className="md:w-2/3">
@@ -47,7 +47,7 @@ const Home = () => {
           {/* <EditorChoice2></EditorChoice2> */}
 
           <BusinessSection2></BusinessSection2>
-          <div className="bg-slate-100 dark:bg-slate-900">
+          <div className="bg-slate-100 dark:bg-slate-950">
             <EssentialSoft></EssentialSoft>
           </div>
           <Benifits></Benifits>
